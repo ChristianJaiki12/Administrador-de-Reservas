@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: url(img/istockphoto-1247569920-170667a.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    background-color: yellow;
+    border-radius: 50px;
+}
+
+.whatsapp-button img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    transition: 0.7s;
+    padding: 30px 20px;
+    z-index: 10;
+}
+
+header.abajo {
+    background: black;
+    padding: 15px 20px;
+
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+nav ul li a {
+    transition: font-size 0.2s ease;
+}
+
+nav ul li a:hover {
+    font-size: 110%;
+    color: red;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@media (max-width: 600px) {
+
+    header{
+        flex-direction: column;
+    }
+    nav ul {
+        display: flex;
+        justify-content: center;
+      }
+    nav ul li {
+        margin: 5px;
+      }
+      
+    nav ul li a:hover {
+        font-size: 100%; 
+      }
+        
+    }
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    font-family: helvetica;
+    margin: 0 15px;
+    text-decoration: none;
+    color: rgb(13, 13, 13);
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: 0.7s;
+}
+
+header.abajo ul li a {
+    color: white;
+
+}
+
+
+.table-formn {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 20px;
+    margin-top: 220px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 60px;
+
+}
+
+.table-one {
+    background-color: rgb(210, 210, 210);
+    padding: 50px 50px;
+    border-radius: 10px;
+
+}
+
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+@media (max-width: 600px) {
+    .table-one td {
+        display: block;
+    }
+
+    .table-one tr {
+        margin-bottom: 10px;
+    }
+}
+
+
+.tableContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+.table-two {
+
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: rgb(118, 204, 175);
+    font-weight: bold;
+
+}
+
+
+.table-two th,
+.table-two td {
+    padding: 8px;
+    border: 3px solid #090909;
+}
+
+#tablaReservas {
+    background-color: white;
+}
+
+
+@media (max-width: 900px) {
+    .tableContainer {
+        font-size: 10px;
+        margin-top: 20px;
+
+    }
+
+    .tableContainer th,
+    .tableContainer td {
+        padding: 2px;
+    }
+}
+.tableContainertwo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.table-three {
+
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: rgb(170, 236, 70);
+    font-weight: bold;
+
+}
+
+
+.table-three th,
+.table-three td {
+    padding: 8px;
+    border: 3px solid #090909;
+}
+
+#tablaSubtotal {
+    background-color: white;
+}
+
+
+
+@media (max-width: 900px) {
+    .tableContainertwo {
+        font-size: 10px;
+        margin-top: 20px;
+
+    }
+
+    .tableContainertwo th,
+    .tableContainertwo td {
+        padding: 2px;
+    }
+}
+
+.Tables {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+
+
+.Button-cleanOrPay {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+
+}
+
+.cleanButton,
+.payButton {
+    margin-right: 5px;
+}
+
+#totalValue {
+    background-color: white;
+    font-size: 20px;
+}
+
+
+/* pantalla emergente */
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+hr {
+    border: none;
+    /* Remover el borde predeterminado */
+    border-top: 5px solid black;
+    /* Grosor y color de la línea */
+}
+
+footer {
+    background-color: #cdcdcd;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 50px;
+}
+
+.footer-container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.footer-links li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.footer-links li:last-child {
+    margin-right: 0;
+}
+
+.footer-links a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas</title>
+    <link rel="stylesheet" href="/stylescss-pestañas/style-reservas.css">
+</head>
+<body>
+    <header>
+
+        <a href="https://api.whatsapp.com/send?phone=643833073" target="_blank" class="whatsapp-button">
+            <img src="/img/cerdo-removebg-preview.png" alt="Cerdito Telefono">
+        </a>
+
+        <img class="logoOne" src="/img/Logo.gif" alt="">
+
+        <nav>
+            <ul>
+                <li><a href="/index.html">INICIO</a></li>
+                <li><a href="#">SOBRE NOSOTROS</a></li>
+                <li><a href="#">SERVICIOS</a></li>
+                <li><a href="#">TICKETS</a></li>
+                <li><a href="#">CONTACTOS</a></li>
+            </ul>
+        </nav>
+
+
+    </header>
+
+    <section class="table-formn">
+        <img src="/img/dancing-pig-40.gif" alt="" width="320px" height="300px">
+
+        <div class="table-responsive">
+            <table class="table-one">
+                <tr>
+                    <td colspan="2">
+                        <h1>RESERVA CON NOSOTROS</h1> <br><br>
+                    </td>
+
+                </tr>
+
+
+                <tr>
+                    <td>
+                        <div class="form-group">
+                            <label for="nombre">Representante:</label>
+                            <input type="text" id="nombre" required>
+                        </div>
+
+                    </td>
+
+                    <td>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" required>
+                        </div>
+
+                    </td>
+
+
+                </tr>
+
+
+                <tr>
+                    <td>
+                        <div class="form-group">
+                            <label for="cantidadAdultos">Cantidad de Adultos:</label>
+                            <input type="number" id="cantidadAdultos" onchange="calcularSubtotal()">
+                        </div>
+
+                    </td>
+
+                    <td>
+                        <div class="form-group">
+                            <label for="precioAdult">Precio Adulto:</label>
+                            <input type="number" id="precioAdult" readonly>
+                        </div>
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="form-group">
+                            <label for="cantidadNinos">Cantidad de Niños:</label>
+                            <input type="number" id="cantidadNinos" onchange="calcularSubtotal()">
+                        </div>
+
+                    </td>
+
+                    <td>
+                        <div class="form-group">
+                            <label for="precioNino">Precio Niños:</label>
+                            <input type="number" id="precioNino" readonly>
+                        </div>
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="form-group">
+                            <label for="movil">Movil:</label>
+                            <input type="text" id="movil" required>
+                        </div>
+
+                    </td>
+
+                    <td>
+                        <div class="form-group">
+                            <label for="fecha">Fecha:</label>
+                            <input type="date" id="fecha" required>
+                        </div>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="form-group">
+                            <label for="hora">Hora:</label>
+                            <input type="time" id="hora" required>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-group">
+                            <label for="juegos">Juegos a Visitar:</label>
+                            <select id="juegos" required>
+                                <option value="">Seleccionar</option>
+                                <option value="carrusel">Carrusel</option>
+                                <option value="montaña_rusa">Montaña Rusa</option>
+                                <option value="caballitos">Caballitos</option>
+                                <option value="pulpo">Pulpo</option>
+                            </select>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button onclick="guardarReserva()">Agregar a tabla de reservas</button>
+                    </td>
+                </tr>
+
+            </table>
+
+        </div>
+
+    </section>
+
+    <section class="Tables">
+        <div class="tableContainer">
+
+            <h2>TABLA DE RESERVAS</h2>
+
+            <table class="table-two">
+                <thead>
+                    <tr>
+                        <th>Representante</th>
+                        <th>Email</th>
+                        <th>Movil</th>
+                        <th>Adultos</th>
+                        <th>Niños</th>
+                        <th>Fecha</th>
+                        <th>Hora</th>
+                        <th>Atraciones</th>
+
+                    </tr>
+                </thead>
+                <tbody id="tablaReservas">
+                    <!-- Filas de datos de la tabla se agregarán dinámicamente aquí -->
+                </tbody>
+            </table>
+        </div>
+
+
+
+        <div class="tableContainertwo">
+
+            <h2>TABLA DE PAGO</h2>
+
+            <table class="table-three">
+                <thead>
+                    <tr>
+
+                        <th>Precio adulto</th>
+                        <th>Precio niño</th>
+                        <th>Sub total</th>
+
+                    </tr>
+                </thead>
+                <tbody id="tablaSubtotal">
+                    <!-- Filas de datos de la tabla se agregarán dinámicamente aquí -->
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">
+                            <div id="totalLabel">Total:</div>
+                            <div id="totalValue">0</div>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+
+
+        </div>
+
+    </section>
+
+    <section class="Button-cleanOrPay">
+        <button class="cleanButton" onclick="limpiarTablas()">Limpiar Reserva</button>
+        <button id="btnPagar">Pagar</button>
+
+        <div id="modalPago" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Elige el método de pago:</h2> <br>
+
+                <h3>Tarjeta de Credito</h3>
+                <img src="/img/92637_VCL_MYCARD_300x194.jpg" alt="">
+                <label for="numero">Numero de tarjeta:</label>
+                <input type="number" id="numbertarjeta" required><br>
+                <label for="numero">Fecha de vencimiento:</label>
+                <input type="number" id="Vencimiento" required><br>
+                <label for="numero">CVV:</label>
+                <input type="number" id="cvv" required><br>
+                <button>Pagar</button><br>
+
+                <br>
+                <hr>
+                <br>
+
+                <h3>Bizum</h3>
+                <img src="/img/bizum.png" alt="">
+                <label for="numero">Numero de telefono:</label>
+                <input type="number" id="numberphone" readonly>
+                <label for="numero">Clave Bizum:</label>
+                <input type="number" id="clave" readonly>
+                <button>Pagar</button>
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer-container">
+            <p>© 2023 Reserva de Parque de Diversiones. Todos los derechos reservados.</p>
+            <ul class="footer-links">
+                <li><a href="#">Términos y condiciones</a></li>
+                <li><a href="#">Política de privacidad</a></li>
+                <li><a href="#">Preguntas frecuentes</a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <script src="/javaScript-pestañas/index-reservas.js"></script>
+</body>
+</html>

@@ -6,20 +6,20 @@
 
 ##### Tabla de contenido:
 - [Proyecto](#Proyecto)
-- [Diseño en terminos generales](#Diseño en terminos generales)
-- [Estructura y diseño Desktop](#Estructura y diseño Desktop)
-- [Estructura y diseño Modal emergente](#Estructura y diseño Modal emergente)
-- [Estructura y diseño Movil](#Estructura y diseño Movil)
+- [Diseño en términos generales](#Diseño-en-términos-generales)
+- [Estructura y diseño Desktop](#Estructura-y-diseño-Desktop)
+- [Estructura y diseño Modal emergente](#Estructura-y-diseño-Modal-emergente)
+- [Estructura y diseño Móvil](#Estructura-y-diseño-Móvil)
 - [Pilas](#Pilas)
-- [Miembros del grupo](#Miembros del grupo)
-- [Como instalar este proyecto](#Como instalar este proyecto)
+- [Miembros del grupo](#Miembros-del-grupo)
+- [Como instalar este proyecto](#Como-instalar-este-proyecto)
 - [Metodología](#Metodología)
 ## Proyecto
 
 <p>Este es un proyecto de reserva de parque de diversiones. Permite a los usuarios realizar reservas, seleccionar la cantidad de adultos y niños, elegir las atracciones a visitar, ingresar la fecha y la hora de la reserva, y guardar los datos en una tabla de reservas
 </p>
 
-## Diseño en terminos generales
+## Diseño en términos generales
 
 <p>
 El diseño de la página de reservas se presenta como una pagina web para realizar reservas en el parque de atracciones. A continuación se describe el diseño de la página en términos generales:
@@ -70,7 +70,7 @@ Al final de la tabla, se muestra el total a pagar.</li></ul>
   <img src="https://i.postimg.cc/bwyN74PD/dise-o-modal-emergente.png" alt="" width="250px" /> 
 </p>
 
-###### Estructura y diseño Movil
+###### Estructura y diseño Móvil
 :iphone:
 
 <p float="left">

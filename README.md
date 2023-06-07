@@ -10,6 +10,7 @@
 - [Estructura y diseño Desktop](#Estructura-y-diseño-Desktop)
 - [Estructura y diseño Modal emergente](#Estructura-y-diseño-Modal-emergente)
 - [Estructura y diseño Móvil](#Estructura-y-diseño-Móvil)
+- [Desarrollo según tecnologías utilizadas](#Desarrollo-según-tecnologías-utilizadas)
 - [Pilas](#Pilas)
 - [Miembros del grupo](#Miembros-del-grupo)
 - [Como instalar este proyecto](#Como-instalar-este-proyecto)
@@ -78,6 +79,34 @@ Al final de la tabla, se muestra el total a pagar.</li></ul>
   
   <img src="https://i.postimg.cc/sfmkDLzF/Dise-o-movil.png" alt="" width="150px" /> 
 </p>
+
+
+## Desarrollo según tecnologías utilizadas
+
+#### HTML
+<p>Aquí se encuentran elementos como encabezados, enlaces, formularios y tablas. Algunos elementos importantes incluyen:</p>
+
+<ul><li> Un encabezado (<header>) que contiene un logotipo, un menú de navegación y un enlace para contactar mediante WhatsApp.</li>
+<li> Una sección (<section>) que muestra un formulario para realizar una reserva. El formulario incluye campos como el nombre del representante, el correo electrónico, la cantidad de adultos y niños, la fecha y hora de la reserva, entre otros.</li>
+<li> Otra sección que muestra dos tablas: una tabla de reservas (<table class="table-two">) que muestra las reservas realizadas, y una tabla de pago (<table class="table-three">) que muestra el subtotal y el total a pagar.</li>
+<li> Una sección final que contiene botones para limpiar la reserva y realizar el pago, y un modal emergente para seleccionar el método de pago.</li></ul>
+ 
+#### CSS
+<p>Aquí se aplican estilos a los elementos HTML, como colores de fondo, tipografías, márgenes y dimensiones. Algunas características importantes del CSS incluyen:</p>
+  
+- Estilos para el encabezado (header), como su posición fija en la parte superior de la página y su apariencia cuando se desplaza hacia abajo (header.abajo).
+- Estilos para el formulario de reserva y las tablas, como colores de fondo, bordes y espaciado.
+- Estilos para los botones y el modal emergente de pago.
+  
+#### JavaScript
+Aquí se definen las funciones que se utilizan en respuesta a eventos, como el cálculo del subtotal, la guardado de la reserva y la limpieza de las tablas. Algunas características importantes del JavaScript incluyen:
+
+- Funciones para calcular el subtotal de la reserva en función de la cantidad de adultos y niños.
+- Una función para guardar la reserva en la tabla de reservas.
+- Una función para limpiar las tablas de reservas y pago.
+- Funciones para mostrar y ocultar el modal emergente de pago.
+ 
+<p>En general, este proyecto de página web permite a los usuarios realizar reservas en un parque de diversiones y realizar el pago utilizando diferentes métodos. El código proporcionado implementa la interfaz de usuario y la lógica básica necesaria para hacerlo funcionar.</p>
 
 ## Pilas
 :wrench:

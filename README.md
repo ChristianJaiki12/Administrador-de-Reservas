@@ -6,13 +6,13 @@
 
 ##### Tabla de contenido:
 - [Proyecto](#Proyecto)
-- [Diseño en terminos generales](#Diseño%20en%20terminos%20generales)
-- [Estructura y diseño Desktop](#Estructura%20y%20diseño%20Desktop)
-- [Estructura y diseño Modal emergente](#Estructura%20y%20diseño%20Modal%20emergente)
-- [Estructura y diseño Movil](#Estructura%20y%20diseño%20Movil)
+- [Diseño en terminos generales](#Diseño en terminos generales)
+- [Estructura y diseño Desktop](#Estructura y diseño Desktop)
+- [Estructura y diseño Modal emergente](#Estructura y diseño Modal emergente)
+- [Estructura y diseño Movil](#Estructura y diseño Movil)
 - [Pilas](#Pilas)
-- [Miembros del grupo](#Miembros%20del%20grupo)
-- [Como instalar este proyecto](#Como%20instalar%20este%20proyecto)
+- [Miembros del grupo](#Miembros del grupo)
+- [Como instalar este proyecto](#Como instalar este proyecto)
 - [Metodología](#Metodología)
 ## Proyecto
 

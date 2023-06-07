@@ -86,9 +86,9 @@ Al final de la tabla, se muestra el total a pagar.</li></ul>
 #### HTML
 <p>Aquí se encuentran elementos como encabezados, enlaces, formularios y tablas. Algunos elementos importantes incluyen:</p>
 
-<ul><li> Un encabezado (<header>) que contiene un logotipo, un menú de navegación y un enlace para contactar mediante WhatsApp.</li>
-<li> Una sección (<section>) que muestra un formulario para realizar una reserva. El formulario incluye campos como el nombre del representante, el correo electrónico, la cantidad de adultos y niños, la fecha y hora de la reserva, entre otros.</li>
-<li> Otra sección que muestra dos tablas: una tabla de reservas (<table class="table-two">) que muestra las reservas realizadas, y una tabla de pago (<table class="table-three">) que muestra el subtotal y el total a pagar.</li>
+<ul><li> Un encabezado (header) que contiene un logotipo, un menú de navegación y un enlace para contactar mediante WhatsApp.</li>
+<li> Una sección (section) que muestra un formulario para realizar una reserva. El formulario incluye campos como el nombre del representante, el correo electrónico, la cantidad de adultos y niños, la fecha y hora de la reserva, entre otros.</li>
+<li> Otra sección que muestra dos tablas: una tabla de reservas (<table class="table-two">) que muestra las reservas realizadas, y una tabla de pago (table class="table-three") que muestra el subtotal y el total a pagar.</li>
 <li> Una sección final que contiene botones para limpiar la reserva y realizar el pago, y un modal emergente para seleccionar el método de pago.</li></ul>
  
 #### CSS
